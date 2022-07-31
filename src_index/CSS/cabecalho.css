@@ -1,0 +1,104 @@
+header {
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+
+header > section > p {
+    margin: 3px;
+    font-weight: 700;
+}
+
+#title {
+    display: flex;
+    margin: 10px 0px 0px;
+    width: 90%;
+    align-items: center;
+}
+
+#p-kenzie {
+    color: rgb(33, 37, 41);
+    font-size: 21px;
+}
+
+#p-food {
+    color: rgb(255, 34, 83);
+    font-size: 16px;
+}
+
+#barra-pesquisa {
+    width: 90%;
+    border-radius: 12px;
+    background-color: rgb(233, 236, 239);
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+header > div> input {
+    border-style: none;
+    border-radius: 12px;
+    background-color: rgb(233, 236, 239);
+    color: rgb(134, 142, 150);
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+header  div input:hover {
+    cursor: pointer;
+}
+
+header  div input:focus {
+    background: rgb(248, 249, 250);
+    border: 1.5px solid rgb(33, 37, 41);
+    border-style: none;
+}
+
+header  div input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.btn-login{
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 33, 81);
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.btn-login:hover {
+    cursor: pointer;
+    background-color: rgb(199, 19, 58);
+}
+
+@media (min-width: 1024px) {
+    header{
+        flex-direction:row;
+        justify-content: space-evenly;
+        box-shadow: 0px 0px 40px -18px rgba(0, 0, 0, 0.25);
+    }
+
+    header  div input {
+        font-size: 18px;
+    }
+
+    #barra-pesquisa, #title {
+        width: 342px;
+        margin: 0 115px;
+    }
+
+    #p-kenzie {
+        font-size: 25px;
+    }
+
+    #p-food  {
+        font-size: 20px;
+    }
+}

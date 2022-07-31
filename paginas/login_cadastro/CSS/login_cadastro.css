@@ -1,0 +1,106 @@
+.box_cadastro_login {
+    text-align: center;
+    margin-top: 50px;
+    overflow: scroll;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cadastro_login {
+    display: inline-flex;
+    gap: 100px;
+}
+
+.box_content {
+    border-radius: 35px 35px 0 0;
+}
+
+.formulario {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 297px;
+}
+
+.box_login {
+    width: 347px;
+    height: 484px;
+    box-shadow:0px 9px 18px 5px rgb(122, 122, 122);
+    border-radius: 35px;
+    display: none;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.box_cadastro {
+    width: 347px;
+    height: 484px;
+    box-shadow:0px 9px 18px 5px rgb(122, 122, 122);
+    border-radius: 35px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.box_cadastro p {
+    margin-top: 0;
+}
+
+p {
+    font-weight: bolder;
+}
+
+.header {
+    background-color: rgb(255, 34, 83);
+    box-shadow: 0px 10px 6px 1px rgb(122 122 122 / 40%);
+    color: rgb(255, 255, 255);
+}
+
+.header h1 {
+    margin: 15px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+input {
+    padding: 15px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 25px;
+    border:none;
+}
+
+.form_btn {
+    height: 42px;
+    border: none;
+    background-color: rgb(255, 34, 83);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 186px;
+    align-self: center;
+}
+
+#facaCadastro {
+    color: rgb(122, 122, 122);
+}
+
+#facaCadastro:hover {
+    color: rgb(255, 34, 83);
+    cursor: pointer;
+}
+
+#facaLogin {
+    color: rgb(122, 122, 122);
+}
+
+#facaLogin:hover {
+    color: rgb(255, 34, 83);
+    cursor: pointer;
+}
+
+@media(min-width: 1024px) {
+    .box_cadastro_login{
+        overflow:unset;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,144 @@
+.container__cards {
+    display: flex;
+    overflow: scroll;
+    margin: 0px 0 28px 5px;
+}
+
+.container__cards::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    Height: 380px;
+    width: 250px;
+    margin-right: 15px;
+}
+
+.card_header {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.card_imagem {
+    height: 185px;
+    border-radius: 8px;
+}
+
+.card_body {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card_body h1 {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.card_body p {
+    font-weight:300;
+    font-size: 12px;
+    color: rgb(134, 142, 150);
+    height: 50px;
+    overflow: hidden;
+}
+
+.card_categoria {
+    font-weight:300;
+    font-size: 12px;
+    color: rgb(134, 142, 150);
+    display: flex;
+    gap: 19px;
+}
+
+.card_descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card_descricao p {
+    line-height: 24px;
+}
+
+.card_descricao span {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card_adicionar_carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 10px; 
+}
+
+.card_valor {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(33, 37, 41);
+}
+
+.card_botao_carrinho {
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    background-color: rgb(228, 247, 239);
+    color: rgb(12, 166, 120);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_botao_carrinho:hover {
+    background-color: rgb(12, 166, 120);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.card_imagem:hover {
+    border: 3px solid rgb(255, 34, 83);
+
+}
+
+.card_descricao p:hover {
+    color:rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+
+@media (min-width: 1024px) {
+    .box__container__principal {
+        display: flex;
+    }
+
+    .container__cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 50px;
+        width: 85%;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+}

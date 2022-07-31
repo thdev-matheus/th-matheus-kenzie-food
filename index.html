@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Food</title>
+    <script src="https://kit.fontawesome.com/16513332e3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/340a08c831.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./global/CSS/reset.css">
+    <link rel="stylesheet" href="./global/CSS/fontes.css">
+    <link rel="stylesheet" href="./src_index/CSS/cabecalho.css">
+    <link rel="stylesheet" href="./src_index/CSS/principal_filtros.css">
+    <link rel="stylesheet" href="./src_index/CSS/principal_cards.css">
+    <link rel="stylesheet" href="./src_index/CSS/carrinho.css">
+</head>
+<body>
+    <header>
+        <section id="title">
+            <p id="p-kenzie">Kenzie</p>
+            <p id="p-food">Food</p>
+        </section>
+        <div id="barra-pesquisa">
+            <input type="text" placeholder="Pesquisar por produto">
+        </div>
+    
+        <div class="btn-header">
+            <button id="botaoLogin" class="btn-login">Login</button>
+        </div>
+    </header>
+    
+    <section class="box__container__principal">
+        <main class="container__principal">
+            <section class="container__filtros">
+                <button id="todos" class="filtro" autofocus>Todos</button>
+    
+                <button id="panificadora" class="filtro">
+                    <img class="filtro__img" src="./src_index/IMG/icone_panificadora.png" alt="panificadora">
+                    Panificadora
+                </button>
+                
+                <button id="frutas" class="filtro">
+                    <img class="filtro__img" src="./src_index/IMG/icone_frutas.png" alt="frutas">
+                    Frutas
+                </button>
+                
+                <button id="bebidas" class="filtro filtro-bebidas">
+                    <img class="filtro__img" src="./src_index/IMG/icone_bebidas.png" alt="bebidas">
+                    Bebidas
+                </button>
+            </section>
+            
+            <section class="container__cards" id="container__cards">
+                
+            </section>
+        </main>
+
+        <section class="botao__mobile__container" id="section__botao__mobile">
+            <button id="mostra_carrinho_mobile" class="botao__carrinho">
+                <i class="fa-solid fa-cart-arrow-down btn__carrinho__icone--tamanho"></i>
+                carrinho
+            </button>
+        </section>
+
+        <aside class="container__carrinho" id="carrinho__compras">
+            <section class="carrinho" id="carrinho">
+                <div class="carrinho__box__cabecalho">
+                    <div class="box__titulo">
+                        <i class="fa-solid fa-cart-arrow-down carrinho__icone--tamanho icone__carrinho"></i>
+                        <h3 class="titulo__carrinho">carrinho</h3>
+                    </div>
+                    <i id="fechar__carrinho" class="fa-solid fa-x carrinho__icone--fechar icone__fechar"></i>
+                </div>
+
+                <div class="carrinho__box__lista">
+                    <ul class="carrinho__lista" id="carrinho__lista">
+                        
+                    </ul>
+                </div>
+
+                <div class="carrinho__box__detalhes">
+                    <div class="detalhes__quantidade">
+                        <p class="quantidade__titulo">Quantidade</p>
+                        <p class="quantidade__num" id="quatidadeTotal">0</p>
+                    </div>
+
+                    <div class="detalhes__total">
+                        <p class="total__titulo">Total</p>
+                        <p class="total__num" id="totalpreco">R$ 00,00</p>
+                    </div>
+                </div>
+            </section> 
+        </aside>
+    </section>
+    <script type="module" src="./src_index/JS/script.js"></script>
+</body>
+</html>

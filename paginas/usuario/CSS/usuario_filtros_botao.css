@@ -1,0 +1,127 @@
+.container__filtros__botao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container__filtros {
+    display: flex;
+    gap: 22px;
+    overflow: scroll;
+    margin: 35px 0 28px 18px;
+}
+
+.container__filtros::-webkit-scrollbar {
+    display: none;
+}
+
+.filtro {
+    display: flex;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: rgb(255, 247, 244);
+    color: rgb(33, 37, 41); 
+    font-family: inter;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.filtro:focus {
+    background-color: rgb(255, 34, 83);
+    color: rgb(247, 249, 250);
+}
+
+.filtro__img {
+    height: 15px;
+}
+
+.filtro-bebidas {
+    margin-right: 18px;
+}
+
+.container__adicionar__produto {
+    display: flex;
+    justify-content: center;
+}
+
+.botao__adicionar__produto {
+    background-color: rgb(255, 34, 83);
+    color: rgb(247, 249, 250);
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-family: inter;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+    .container__filtros__botao {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 15px 100px;
+    }
+    
+    .container__filtros {
+        display: flex;
+        gap: 22px;
+        overflow: scroll;
+        margin: 35px 0 28px 18px;
+    }
+    
+    .container__filtros::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .filtro {
+        display: flex;
+        gap: 15px;
+        padding: 15px 20px;
+        border-radius: 30px;
+        background-color: rgb(255, 247, 244);
+        color: rgb(33, 37, 41); 
+        font-family: inter;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .filtro:hover {
+        background-color: rgb(255, 34, 83);
+        color: rgb(247, 249, 250);
+    }
+    
+    .filtro:focus {
+        background-color: rgb(255, 34, 83);
+        color: rgb(247, 249, 250);
+    }
+    
+    .filtro__img {
+        height: 15px;
+    }
+    
+    .filtro-bebidas {
+        margin-right: 18px;
+    }
+    
+    .container__adicionar__produto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .botao__adicionar__produto {
+        background-color: rgb(255, 34, 83);
+        color: rgb(247, 249, 250);
+        padding: 15px 20px;
+        border-radius: 30px;
+        font-family: inter;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .botao__adicionar__produto:hover {
+        background-color: rgb(252, 111, 142);
+    }
+}

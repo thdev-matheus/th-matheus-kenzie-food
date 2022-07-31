@@ -1,0 +1,65 @@
+.container__principal {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    margin: 0px 0 28px 18px;
+}
+
+.container__filtros {
+    display: flex;
+    gap: 22px;
+    overflow: scroll;
+    margin: 35px 0 28px 5px;
+}
+
+.container__filtros::-webkit-scrollbar {
+    display: none;
+}
+
+.filtro {
+    display: flex;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: rgb(255, 247, 244);
+    color: rgb(33, 37, 41); 
+    font-family: inter;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.filtro:focus {
+    background-color: rgb(255, 34, 83);
+    color: rgb(247, 249, 250);
+}
+
+.filtro:hover{
+    cursor: pointer;
+}
+
+.filtro__img {
+    height: 15px;
+}
+
+.filtro-bebidas {
+    margin-right: 18px;
+}
+
+.card_image { 
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+@media (min-width: 1024px) {
+    .container__principal {
+        display: flex;
+        overflow: auto;
+    }
+
+    .container__filtros {
+        gap: 28px;
+        margin: 35px 0 35px 100px;
+        width: 50vw;
+    }
+}

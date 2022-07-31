@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Food - Dashboard</title>
+    <script src="https://kit.fontawesome.com/16513332e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../global/CSS/reset.css">
+    <link rel="stylesheet" href="../../global/CSS/fontes.css">
+    <link rel="stylesheet" href="./CSS/usuario_header.css">
+    <link rel="stylesheet" href="./CSS/usuario_filtros_botao.css">
+    <link rel="stylesheet" href="./CSS/usuario_main.css">
+    <link rel="stylesheet" href="./CSS/modais_produto.css">
+    <link rel="stylesheet" href="./CSS/modal_logout.css">
+</head>
+<body>
+  <header>
+    <section id="title">
+        <p id="p-kenzie">Kenzie</p>
+        <p id="p-food">Food</p>
+    </section>
+    <div id="barra-pesquisa">
+        <input type="text" placeholder="Pesquisar por produto">
+    </div>
+    <div class="boxImagem">
+      <img class="imagem" src="/src_index/IMG/Frame 1.png">
+    </div>
+  </header>
+
+  <section class="container__filtros__botao">
+    <section class="container__filtros">
+      <button class="filtro" id="todos" autofocus>Todos</button>
+
+      <button class="filtro" id="panificadora">
+          <img class="filtro__img" src="/src_index/IMG/icone_panificadora.png" alt="panificadora">
+          Panificadora
+      </button>
+      
+      <button class="filtro" id="frutas">
+          <img class="filtro__img" src="/src_index/IMG/icone_frutas.png" alt="frutas">
+          Frutas
+      </button>
+      
+      <button class="filtro filtro-bebidas" id="bebidas">
+          <img class="filtro__img" src="/src_index/IMG/icone_bebidas.png" alt="bebidas">
+          Bebidas
+      </button>
+    </section>
+
+    <section class="container__adicionar__produto">
+        <button class="botao__adicionar__produto">Adicionar novo produto</button>
+    </section>
+  </section>
+
+  <main class="containerPrincipal">
+    <div class="boxTitulos">
+      <div class="tituloProd">Produto</div>
+      <div class="tituloCat">Categorias</div>
+      <div class="tituloDes">Descrição</div>
+      <div class="tituloAct">Ações</div>
+    </div>
+    <ul id="listaProdutos" class="listaProdutos">
+
+    </ul>
+  </main>
+
+  <section id= "modal_cadastro" class="container__modais">
+    <section  class="modal_padrao" id="modal_cadastro_produto">
+        <div class="header">
+            <p>Cadastro de Produto</p>
+            <button id="btn_fechar" class="btn-fechar">X</button>
+        </div>
+        <form id="form_cadastro">
+            <label for="nome_produto">Nome do Produto</label>
+            <input name="nome" id="nome_produto" type="text" placeholder="Digitar o nome" required>
+
+            <label for="descricao_produto">Descrição do Produto</label>
+            <textarea name="descricao" placeholder="Digitar a Descrição" name="" id="descricao_produto" required></textarea>
+
+            <label for="">Categorias</label>
+            <div class="categorias">
+                <button type="button" class="btn_categoria">Panificadora</button>
+                <button type="button" class="btn_categoria">Frutas</button>
+                <button type="button" class="btn_categoria">Bebidas</button>
+            </div>
+            
+            <label for="valor_produto">Valor do Produto</label>
+            <input name="preco" id="valor_produto" type="number" placeholder="Digitar o valor" required>
+
+            <label for="link_img_produto">Link da imagem</label>
+            <input name="imagem" id="link_img_produto" type="url" placeholder="Inserir link" required>
+
+            <button id="cadastrar_produto">Cadastrar Produto</button>
+        </form>
+    </section>
+  </section>
+
+  <section id="modalEdicao" class="container__modais">
+      <section  class="modal_padrao" id="modal_edicao_produto">
+          <div class="header">
+              <p>Edição de Produto</p>
+              <button id="botaoFecharEd" class="btn-fechar">X</button>
+          </div>
+          <form action="">
+              <label for="nome_produto">Nome do Produto</label>
+              <input id="nome_produto" type="text" placeholder="Digitar o nome">
+
+              <label for="descricao_produto">Descrição do Produto</label>
+              <textarea placeholder="Esse é um dos sabores de pizza mais pedidos pelos veganos" name="" id="descricao_produto"></textarea>
+
+              <label for="">Categorias</label>
+              <div class="categorias">
+                  <button>Panificadora</button>
+                  <button>Frutas</button>
+                  <button>Bebidas</button>
+              </div>
+              
+              <label for="valor_produto">Valor do Produto</label>
+              <input id="valor_produto" type="text" placeholder="50.00">
+
+              <label for="link_img_produto">Link da imagem</label>
+              <input id="link_img_produto" type="text" placeholder="https://image.unsplash.com">
+          </form>
+          <div id="container_botoes">
+              <button id="btn_excluir">Excluir</button>
+              <button id="btn_salvar">Salvar Alterações</button>
+          </div>
+      </section>
+  </section>
+
+  <section id="modalExclusao" class="container__modais">
+      <section class="modal_padrao" id="modal_exclusao_produto">
+          <div class="header">
+              <p>Exclusão de Produto</p>
+              <button id="botaoFecharDel" class="btn-fechar">X</button>
+          </div>
+          <div class="main_exclucao">
+              <p id="certeza">Tem certeza que deseja excluir este produto?</p>
+              <div id="container_botoes_sim_nao">
+                  <button id="btn_sim">Sim</button>
+                  <button id="btn_nao">Não</button>
+              </div>
+          </div>
+      </section>
+  </section>
+
+  <section class="status container__modais">
+      <section class="modal_padrao" id="status_result">
+          <div class="header">
+              <p>Status</p>
+              <button class="btn-fechar">X</button>
+          </div>
+
+          <p class="mensagem_status">Produto adicionado com sucesso</p>
+          <div class="cor_status"></div>
+      </section>
+  </section>
+  <script type="module" src="./JS/dom/dom_usuario.js"></script>
+  <script type="module" src="../usuario/JS/usuario.js"></script>
+</body>
+</html>

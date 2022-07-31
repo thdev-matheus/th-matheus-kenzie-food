@@ -1,0 +1,125 @@
+.containerPrincipal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    overflow: scroll;
+    width: 1200px;
+    margin: auto;
+}
+
+.containerPrincipal::-webkit-scrollbar {
+    display: none;
+}
+
+.listaProdutos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.boxTitulos {
+    display: flex;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(134, 142, 150);
+    margin: 5px 18px;
+}
+
+.tituloProd {
+    margin-left: 25px;
+    width: 30%;
+}
+
+.tituloCat {
+    width: 25%;
+}
+
+.tituloDes {
+    width: 35%;
+}
+
+.tituloAct {
+    width: 10%;
+}
+
+.itemListaProdutos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(233, 236, 239);
+    border-radius: 15px;
+    height: 60px;
+    margin: 2px 18px;
+}
+
+.boxImgNome {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    overflow: hidden;
+}
+
+.boxImg {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.imagemProduto {
+    height: 38px;
+}
+
+.nomeProduto {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.boxCategoria {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    width: 25%;
+    color: rgb(134, 142, 150);
+}
+
+.categoria {
+    padding: 5px 15px;
+    border-radius: 8px;
+    background-color: rgb(248, 249, 250);
+    color: rgb(134, 142, 150);
+}
+
+.descricao {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    width: 35%;
+    color: rgb(134, 142, 150);
+}
+
+.boxAcoes {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    width: 10%;
+    margin-right: 18px;
+}
+
+.botaoEditarProduto {
+    color: rgb(134, 142, 150);
+}
+
+.botaoDeletarProduto {
+    color: rgb(134, 142, 150);
+    margin-right: 40px;
+}
