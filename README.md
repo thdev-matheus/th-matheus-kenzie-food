@@ -15,11 +15,11 @@ https://glowing-disco-bbe7642c.pages.github.io/
 <br/>
 <br/>
 <div style="display: inline-block">
-    <img width="46%" src="https://i.ibb.co/3y69Kvt/Captura-de-tela-de-2022-07-31-23-53-37.png" alt="imagem">
-    <img width="46%" src="https://i.ibb.co/sqYqN9K/Captura-de-tela-de-2022-07-31-23-53-43.png" alt="imagem">
-    <img width="46%" src="https://i.ibb.co/zmKKcqT/Captura-de-tela-de-2022-07-31-23-53-58.png" alt="imagem">
-    <img width="46%" src="https://i.ibb.co/C0kyWXG/Captura-de-tela-de-2022-07-31-23-54-35.png" alt="imagem">
-    <img width="46%" src="https://i.ibb.co/26p1gfY/Captura-de-tela-de-2022-07-31-23-55-16.png" alt="imagem">
+    <img width="46%" src="https://i.ibb.co/3y69Kvt/Captura-de-tela-de-2022-07-31-23-53-37.png" alt="imagem"/>
+    <img width="46%" src="https://i.ibb.co/sqYqN9K/Captura-de-tela-de-2022-07-31-23-53-43.png" alt="imagem"/>
+    <img width="46%" src="https://i.ibb.co/zmKKcqT/Captura-de-tela-de-2022-07-31-23-53-58.png" alt="imagem"/>
+    <img width="46%" src="https://i.ibb.co/C0kyWXG/Captura-de-tela-de-2022-07-31-23-54-35.png" alt="imagem"/>
+    <img width="46%" src="https://i.ibb.co/26p1gfY/Captura-de-tela-de-2022-07-31-23-55-16.png" alt="imagem"/>
 </div>
 <br/>
 <br/>
